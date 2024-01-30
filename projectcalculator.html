@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projectcalculator</title>
+    <style>
+        .calculator{
+            border: 1px solid rgb(74, 12, 12);
+            height:  477px;
+            width: 300px;
+            margin: 55px;
+            background-color: rgb(69, 121, 219);
+            border-radius: 8px;
+            
+        }
+        #display{
+            margin: 1px 33px;
+            margin-top: 3px;
+            font-size: 1.2rem;
+            width: 223px;
+            height: 36px;
+            border-radius: 5px;
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 2px 8px;
+            padding: 22px;
+            border-radius: 10px;
+        }
+        button:hover{
+            size: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="button">
+            <button class="button"  onclick=" present = ' ';
+             document.querySelector('#display').value = present;">c</button>
+            <button class="button" onclick=" present = present + 1;
+             document.querySelector('#display').value = present;">1</button>
+            <button class="button" onclick=" present = present + 2;
+             document.querySelector('#display').value = present;">2</button>
+            <button class="button" onclick=" present = present + '+';
+            document.querySelector('#display').value = present;">+</button>
+            <button class="button" onclick=" present = present + 3;
+            document.querySelector('#display').value = present;">3</button>
+            <button class="button" onclick=" present = present + 4;
+            document.querySelector('#display').value = present;">4</button>
+            <button class="button" onclick=" present = present + '-';
+            document.querySelector('#display').value = present;">-</button>
+            <button class="button" onclick=" present = present + 5;
+            document.querySelector('#display').value = present;">5</button>
+            <button class="button" onclick=" present = present + 6;
+            document.querySelector('#display').value = present;">6</button>
+            <button class="button" onclick=" present = present + '*';
+            document.querySelector('#display').value = present;">*</button>
+            <button class="button" onclick=" present = present + 7;
+            document.querySelector('#display').value = present;">7</button>
+            <button class="button" onclick=" present = present + 8;
+            document.querySelector('#display').value = present;">8</button>
+            <button class="button" onclick=" present = present + '/';
+            document.querySelector('#display').value = present;">/</button>
+            <button class="button" onclick=" present = present + 9;
+            document.querySelector('#display').value = present;">9</button>
+            <button class="button" onclick=" present = present + 0;
+            document.querySelector('#display').value = present;">0</button>
+            <button class="button" onclick=" let result = ' ';
+            result =  eval(present);
+            document.querySelector('#display').value = result;">=</button>
+            <button class="button" onclick=" present = present + '.';
+            document.querySelector('#display').value = present;">.</button>
+        </div>
+
+
+    </div>
+    <script>
+        let present = ' ';
+        
+    </script>
+    
+</body>
+</html>
